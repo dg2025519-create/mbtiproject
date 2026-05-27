@@ -269,3 +269,25 @@ if st.session_state.get("show_pokemon", False):
 # 푸터
 st.markdown("---")
 st.markdown("<center>🌟 Made with 💖 by 당곡고 AI 도우미 🌟</center>", unsafe_allow_html=True)
+# 푸터 - 제작자 표시
+st.markdown("---")
+
+col1, col2, col3 = st.columns([1, 2, 1])
+with col2:
+    st.markdown("""
+    <div style='background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); 
+                padding: 20px; border-radius: 20px; text-align: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);'>
+        <h2 style='color: #ff6b9d; margin: 0;'>🦈✨ Made by 이유리 ✨🦈</h2>
+        <p style='color: #555; margin-top: 10px; font-size: 16px;'>
+            💕 귀여운 포켓몬 친구들과 함께해요! 💕
+        </p>
+    </div>
+    """, unsafe_allow_html=True)
+    
+    # 귀여운 상어 이미지
+    st.image("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWxnNW9xajVrejlpZWVuZTlhZW1hcjg1ZHRwYzlucmNzc2xocGtnaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/H4uE6w9G1uK7e/giphy.gif", 
+             caption="🦈 이유리's 귀여운 상어 친구 🦈",
+             use_container_width=True)
+
+st.markdown("<center>🌟 Made with 💖 by 이유리 @ 당곡고 🌟</center>", unsafe_allow_html=True)
